@@ -1,0 +1,8 @@
+# Redirect /old-path to /new-path with a 301 status code
+/old-path   /new-path   301
+
+# Rewrite /api/* to a serverless function or API
+/api/*   /.netlify/functions/:splat   200
+
+# SPA fallback - redirect all 404s to /index.html
+/*   /index.html   200
